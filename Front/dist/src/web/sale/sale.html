@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Venda</title>
+    <link rel="stylesheet" type="text/css" href="/estilo.0158be1f.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css">
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+</head>
+
+body>
+    <h1>Gestão de Venda</h1>
+
+    <!-- Container do formulário de registro de venda -->
+    <div class="login-container">
+        <form id="saleForm">
+            <table>
+                <tr>
+                    <td><label for="txtId">ID:</label></td>
+                    <td><input id="txtId" type="text" class="input-field" disabled /></td>
+                </tr>
+                <tr>
+                    <td><label for="ddlUser">UserId:</label></td>
+                    <td>
+                        <select id="ddlUser" class="input-field">
+                            <!-- Opções serão carregadas aqui -->
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="ddlProduct">ProductId:</label></td>
+                    <td>
+                        <select id="ddlProduct" class="input-field">
+                            <!-- Opções serão carregadas aqui -->
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="ddlClient">ClientId:</label></td>
+                    <td>
+                        <select id="ddlClient" class="input-field">
+                            <!-- Opções serão carregadas aqui -->
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="txtQuantity">Quantidade:</label></td>
+                    <td><input id="txtQuantity" type="number" class="input-field" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="button-container">
+                            <input id="btnGravar" type="button" value="Gravar" class="btn" />
+                            <input id="btnCancel" type="button" value="Limpar" class="btnLimpar" />
+                            <a href="/menu.html" class="btn-voltar">Voltar</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <br>
+    <hr>
+    
+    <!-- Tabela de Vendas -->
+    <div>
+        <table id="tbSale" class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>UserId</th>
+                    <th>ProductId</th>
+                    <th>ClientId</th>
+                    <th>Quantidade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dados da tabela serão carregados aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="/sale.3c385534.js"></script>
+</body>
+
+</html>
